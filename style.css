@@ -1,0 +1,114 @@
+body {
+    min-width: 320px;
+    box-sizing: border-box;
+    background-image: url('trinity_college_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    background-color: #e09e69;
+    font-family: 'Cinzel', serif;
+    font-size: 36px;
+    text-align: center;
+    border-style: groove;
+    border-width: 15px;
+    border-color: rgb(179, 110, 83);
+    padding: 20px;
+    margin: 20px auto 30px;
+    width: 40vw;
+    min-width: 20vw;
+}
+
+#page-outer {
+    background-color: #e09e69;
+    margin: 0 auto;
+    border-radius: 1em;
+    border-style: groove;
+    border-width: 1em;
+    border-color: rgb(179, 110, 83);
+    padding: 20px;
+    width: 75%;
+    height: auto;
+}
+
+.button-wrapper, #new-book {
+    padding: 10px 20px;
+}
+
+.button-wrapper {
+    margin: 0 auto 20px;
+    position: relative;
+    width: 150px;
+}
+
+#new-book {
+    background-color: #ffd071;
+    border-color: #ffd071;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+}
+
+.form, #submit, #cancel, .change-status, .remove-book {
+    font-family: 'Crimson Text', serif;
+}
+
+.form {
+    border: 1px solid grey;
+    background-color: #f5ad68;
+    padding: 10px;
+    width: 60%;
+    height: auto;
+    margin: 0 auto 10vh auto;
+}
+
+.form-container {
+    margin: 15px;
+}
+
+#form-heading {
+    margin: 0 auto;
+    text-align: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 95%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+table {
+    font-family: 'Lora', serif;
+    table-layout: auto;
+    width: 100%;
+    border: 1px inset rgb(179, 110, 83);
+    line-height: 2;
+}
+
+tbody > tr {
+    transition: background-color 0.5s;
+    text-align: center;
+}
+
+tbody > tr:hover {
+    background-color: rgba(255, 187, 160, 0.678);
+}
+
+td {
+    border: 1px inset rgb(179, 110, 83);
+}
+
+#submit, #cancel {
+    font-size: 20px;
+    border: 1px outset;
+}
+
+#cancel {
+    float: right;
+}
