@@ -30,7 +30,7 @@ class UI {
             document.querySelector(DOMstrings.newBook).style.display = 'none';
         })
     }
-
+   
     // Hide form after submitting book info
     static hideAfterSubmit() {
         document.querySelector(DOMstrings.form).style.display = 'none';
@@ -163,8 +163,10 @@ document.querySelector(DOMstrings.form).addEventListener('submit', (e) => {
         // Clear fields
         UI.clearFields();
 
+        /*
         // Form will close
         UI.hideAfterSubmit();
+        */
     }
 
     // Prevent actual default
