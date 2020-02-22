@@ -60,7 +60,7 @@ class UI {
         let row = document.createElement('tr');
 
         row.innerHTML = `
-            <td>${bookObj.title}</td>
+            <td><em>${bookObj.title}</em></td>
             <td>${bookObj.author}</td>
             <td>${bookObj.pageNum}</td>
             <td><button class="change-status">${bookObj.read}</button></td>
