@@ -175,11 +175,13 @@ document.querySelector(DOMstrings.form).addEventListener('submit', (e) => {
 
 // Event to remove Book
 document.querySelector('.book-list').addEventListener('click', (e) => {
-    // Remove book from UI
-    UI.deleteBooks(e.target);
+    if (e.target.className === 'remove-book') {
+        // Remove book from UI
+        UI.deleteBooks(e.target);
 
-    // Remove book from storage
-    Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+        // Remove book from storage
+        Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+    }
 })
 
 // Event to change Read Status
