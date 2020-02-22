@@ -3,4 +3,4 @@ This is a little front-end Library app project, which is part of the Odin Projec
 
 Simply put, click the Add New Book button to display the form, add book info into the input fields, and the info will be displayed in a table.
 
-Book info is stored in the browser's local storage.
+Book info is saved in the local storage.
