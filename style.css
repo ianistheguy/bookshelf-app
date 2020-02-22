@@ -43,8 +43,7 @@ body {
 }
 
 #new-book {
-    background-color: #ffd071;
-    border-color: #ffd071;
+    border: 1px outset;
     font-family: 'Libre Baskerville', serif;
     font-size: 18px;
 }
