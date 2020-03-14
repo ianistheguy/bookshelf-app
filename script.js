@@ -112,7 +112,7 @@ class Store {
 
         books.forEach((bookObj, index) => {
             if (bookObj.read === read) {
-                books.splice(index, 1);
+                books.splice(index, 0);
             }
         })
 
@@ -180,7 +180,7 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
         UI.deleteBooks(e.target);
 
         // Remove book from storage
-        Store.removeBook(e.target.parentElement.previousElementSibling.children[0].textContent);
+        Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
     }
 })
 
