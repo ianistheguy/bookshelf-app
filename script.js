@@ -30,7 +30,7 @@ class UI {
             document.querySelector(DOMstrings.newBook).style.display = 'none';
         })
     }
-   
+
     // Hide form after submitting book info
     static hideAfterSubmit() {
         document.querySelector(DOMstrings.form).style.display = 'none';
@@ -112,7 +112,7 @@ class Store {
 
         books.forEach((bookObj, index) => {
             if (bookObj.read === read) {
-                books.splice(index, 0);
+                books.splice(index, 1);
             }
         })
 
