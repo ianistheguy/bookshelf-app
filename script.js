@@ -72,7 +72,7 @@ class UI {
     // Delete books from UI table
     static deleteBooks(el) {
         if (el.classList.contains('remove-book')) {
-            el.parentElement.parentElement.remove();
+            el.parentElement.previousElementSibling.remove();
         }
     }
 
@@ -180,7 +180,7 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
         UI.deleteBooks(e.target);
 
         // Remove book from storage
-        Store.removeBook(e.target.parentElement.parentElement.previousElementSibling.textContent);
+        Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
     }
 })
 
