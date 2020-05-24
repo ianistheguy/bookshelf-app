@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     min-width: 320px;
-    box-sizing: border-box;
+    height: 100vh;
     background-image: url('trinity_college_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +37,8 @@ body {
 }
 
 .button-wrapper, #new-book {
-    padding: 10px 20px;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
 .button-wrapper {
@@ -106,6 +111,7 @@ td {
 #submit, #cancel {
     font-size: 20px;
     border: 1px outset;
+    cursor: pointer;
 }
 
 #cancel {
